@@ -1,0 +1,13 @@
+input{
+    border-radius: 6px;
+}
+button{
+    background-color: chocolate;
+    color: white;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.774);
+}
+button:hover{
+    background-color: coral;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.774);
+}
