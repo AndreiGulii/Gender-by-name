@@ -6,14 +6,16 @@ async function fetchName(name) {
   console.log(data);
   return data;
 }
-
+let currentName = "";
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
-  let currentName = event.target.name.value;
+  
+   currentName = event.target.name.value;
   const result =await fetchName(currentName);
   const p = document.createElement("p");
   p.textContent = p.textContent = "Name: " + result.name +
     " Gender: " + result.gender;
   form.append(p);
+  event.target.name.value= "";
 });
 
